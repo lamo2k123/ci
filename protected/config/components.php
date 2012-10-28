@@ -8,22 +8,15 @@ return array(
 		'loginUrl' 			=> array( '/user/login' ),
 	),
 
-	'authManager'=>array(
+	'authManager' => array(
 		'class'			=> 'RDbAuthManager',
 		'defaultRoles' 	=> array( 'Guest' ),
 	),
 
-	// uncomment the following to enable URLs in path-format
-	/*
-	'urlManager'=>array(
-		'urlFormat'=>'path',
-		'rules'=>array(
-			'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-			'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-			'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-		),
+	'urlManager' => array(
+		'urlFormat' 		=> 'path',
+		'showScriptName'	=> false,
 	),
-	*/
 
 	'db' => array(
 		'connectionString' 		=> 'mysql:host=localhost;dbname=ci',
